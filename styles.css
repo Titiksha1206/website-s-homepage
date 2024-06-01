@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 80px;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.text-danger {
+    margin-bottom: 19px;
+    font-size: 25px;
+}
+
+.hero-title {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.hero-body {
+    max-width: 500px;
+    font-size: 0.9rem;
+}
+
+.contact-button {
+    background-color: #FF0000;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    margin-top: 26px;
+    font-size: 12px;
+}
+
+.contact-button:hover {
+    background-color: #ff5555;
+}
+
+.container-body {
+    max-width: 100%;
+    background-color: rgb(252, 251, 251);
+    padding: 50px;
+}
+
+.about-title {
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.modal-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    color: gray;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.btn-primary {
+    border-radius: 4px;
+    background-color: #ff0055;
+    border-color: #ff0055;
+}
+
+.btn-primary:hover {
+    background-color: #ff3366;
+    border-color: #ff3366;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.project-list {
+    background-color: gray;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    background-color: white
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.testimonial-container {
+    position: relative;
+    text-align: center;
+}
+
+.testinomal-img {
+    margin: 0 261px;
+    opacity: 0.2;
+}
+
+.Testimonial-body {
+    max-width: 590px;
+    position: absolute;
+    /* top: 105%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.person-container {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.person {
+    color: red;
+    font-weight: 700;
+}
+
+.person-company {
+    color: gray;
+}
+
+@media screen and (max-width: 992px) {
+    .hero-section {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .text-danger {
+        margin-top: 99px;
+        font-size: 15px;
+    }
+
+    .hero-title {
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .hero-body {
+        max-width: 500px;
+        font-size: 0.9rem;
+    }
+
+    .contact-button {
+        background-color: #FF0000;
+        color: #FFF;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        margin-top: 26px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}
