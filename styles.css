@@ -87,21 +87,10 @@ body {
     border-color: #ff3366;
 }
 
-.project-image {
-    width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    margin-bottom: 30px;
-}
-
 .section-title {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 30px;
-}
-
-.project-list {
-    background-color: gray;
 }
 
 .card {
@@ -149,6 +138,30 @@ body {
 
 .person-company {
     color: gray;
+}
+
+.project-list {
+    list-style: none;
+    padding: 0;
+}
+
+.project-list li {
+    cursor: pointer;
+    padding: 0.9rem;
+    max-width: 230px;
+}
+
+.project-list li.active {
+    background-color: #ff0055;
+    border: none;
+}
+
+.article-body {
+    font-size: 12px;
+}
+
+.project-title {
+    font-size: 13px;
 }
 
 @media screen and (max-width: 992px) {
@@ -200,6 +213,10 @@ body {
     .hero-text {
         margin-right: 0;
         margin-bottom: 20px;
+    }
+
+    .project-list {
+        text-align: center;
     }
 }
 

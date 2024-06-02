@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Homepage</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -78,37 +79,43 @@
 
     <!-- Our Project Section -->
     <div class="container my-5">
-        <h2 class="text-center mb-4 text-danger">OUR PROJECTS</h2>
+        <h2 class="text-center mb-4 text-danger">OUR PROJECT</h2>
         <h1 class="section-title text-center">WHY WE ARE BEST</h1>
-        <div class="row justify-content-md-center">
-            <div class="col-lg-6 col-md-12">
-                <img src="project.png" class="img-fluid project-image" id="projectImage" alt="Project Image">
-            </div>
-            <div class="col-lg-3 col-md-12">
-                <div class="list-group" id="projectList">
-                    <a href="#" class="list-group-item list-group-item-action list-group-item-danger "
-                        data-image="project2.jpg">
-                        <p class="mb-2 fw-semibold">Intuitive Design</p>
-                        <p class="article-body mb-1">Fyle's interface is designed to be user-friendly.
-                            <!-- The mobile app allows users to track and manage expenses on-the-go, -->
-                        </p>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action list-group-item-danger active"
-                        data-image="project.png">
-                        <p class="mb-2">Better Strategy & Quality</p>
-                        <p class="article-body mb-1">Set to launch on the manufacturer's new A330neo aircraft in 2017
-                        </p>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action list-group-item-light"
-                        data-image="project3.jpg">
-                        <p class="mb-2"> Analytics and Reporting</p>
-                        <p class="article-body mb-1">Offer
-                            insights into patterns, helping businesses make decisions.</p>
-                    </a>
+
+        <section id="our-projects" class="mt-5">
+            <div class="row justify-content-md-center">
+                <div class="col-md-6">
+                    <img id="project-image" src="project.png" class="d-block w-100" alt="Project Image">
                 </div>
-            </div>
-        </div>
+                <div class="col-md-6 col-lg-3">
+                    <ul class="project-list list-group">
+                        <li data-image="project2.jpg" class="list-group-item list-group-item-light">
+                            <p class="mb-2 fw-semibold project-title">Intuitive Design</p>
+                            <p class="article-body mb-1">Fyle's interface is designed to be user-friendly.
+
+                                The mobile app allows users to track and manage expenses on-the-go,enhancing convenience
+                                and efficiency.
+                            </p>
+                        </li>
+                        <li data-image="project.png" class="list-group-item list-group-item-light active">
+                            <p class="mb-2 fw-semibold project-title">Better Strategy & Quality</p>
+                            <p class="article-body mb-1">Set to launch on the manufacturer's new A330neo aircraft in
+                                2017, it's offering lots of
+                            </p>
+                        </li>
+                        <li data-image="project3.jpg" class="list-group-item list-group-item-light">
+                            <p class="mb-2 fw-semibold project-title"> Analytics and Reporting</p>
+                            <p class="article-body mb-1">Offer
+                                insights into patterns, helping businesses make decisions financial
+                                budgeting.</p>
+                        </li>
+                    </ul>
+                </div>
+        </section>
     </div>
+
+
+
 
     <!-- highlights -->
     <div class="container container-body my-5">
@@ -159,9 +166,11 @@
         <h2 class="text-center mb-4 text-danger">CLIENTS FEEDBACK</h2>
         <h1 class="section-title text-center">PEOPLE SAY'S ABOUT US!</h1>
         <img style='display: block;' class="testinomal-img" src="Quote-Marks-Blue.png" width="52px" height="auto">
-        <div class="Testimonial-body text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+        <div class="Testimonial-body text-center">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Pariatur
             corporis alias
-            atque saepe asperiores facere deleniti dolor sed debitis, voluptas necessitatibus eius hic veniam sit magni.
+            atque saepe asperiores facere deleniti dolor sed debitis, voluptas necessitatibus eius hic
+            veniam sit magni.
             Consectetur eaque aliquid sunt quo mollitia quis!
         </div>
 
@@ -203,7 +212,8 @@
                         </div>
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="consent" name="consent" required>
-                            <label class="form-check-label" for="consent">I agree to Fyle's terms and conditions,
+                            <label class="form-check-label" for="consent">I agree to Fyle's terms and
+                                conditions,
                                 and
                                 provide consent to send me communication.</label>
                         </div>

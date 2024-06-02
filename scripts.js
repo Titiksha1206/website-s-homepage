@@ -9,21 +9,11 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $("#contactUsBtn, #contactUsBtnMain").on("click", function () {
-    $("#contactUsModal").modal("show");
-  });
-
-  // Initialize the carousel
-  $("#whatWeDoCarousel").carousel({
-    interval: 5000,
-  });
-
-  //   Handle project image change on content click
-  $("#projectList a").on("click", function (e) {
-    e.preventDefault();
+  // Change project image on click
+  $(".project-list li").click(function () {
     var newImage = $(this).data("image");
-    $("#projectImage").attr("src", newImage);
-    $("#projectList a").removeClass("active");
+    $("#project-image").attr("src", newImage);
+    $(".project-list li").removeClass("active");
     $(this).addClass("active");
   });
 });
