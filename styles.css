@@ -11,6 +11,8 @@ body {
     height: 100vh;
 }
 
+/* hero section css */
+
 .hero-section {
     display: flex;
     align-items: center;
@@ -40,18 +42,23 @@ body {
 }
 
 .contact-button {
-    background-color: #FF0000;
+    background-color: #ff0055;
     color: #FFF;
     border: none;
     padding: 10px 20px;
-    border-radius: 4px;
     text-transform: uppercase;
     margin-top: 26px;
     font-size: 12px;
 }
 
 .contact-button:hover {
-    background-color: #ff5555;
+    background-color: #ff3366;
+}
+
+/* what we do section css */
+
+.what-container {
+    margin: 0 30px;
 }
 
 .container-body {
@@ -76,15 +83,7 @@ body {
     left: 65%;
     transform: translate(-50%, -50%);
     text-align: left;
-}
 
-.about-title {
-    font-weight: 700;
-    margin-top: 10px;
-}
-
-.manual-btn:hover {
-    background: #ff0055;
 }
 
 .container-box {
@@ -96,12 +95,14 @@ body {
     margin-right: 20px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    /* transition: 2s; */
 }
 
 .box img {
     display: block;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .box-body {
@@ -118,6 +119,8 @@ body {
     flex-direction: column;
     transition: 0.2s;
     backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    justify-content: center;
 }
 
 .box-title {
@@ -154,30 +157,82 @@ body {
 
 }
 
-.modal-title {
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 10px;
+.slider-radio {
+    accent-color: #ff0055;
+    margin-top: 15px;
 }
 
-.form-group {
-    color: gray;
-}
+/* input[type="radio"] {
+    background-color: black;
+} */
 
-.form-control:focus {
-    box-shadow: none;
-}
+/* form section css */
 
 .btn-primary {
     border-radius: 4px;
     background-color: #ff0055;
     border-color: #ff0055;
+    width: 100%;
+    padding: 12px 0;
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .btn-primary:hover {
     background-color: #ff3366;
     border-color: #ff3366;
 }
+
+.modal-body {
+    margin: 0 19px;
+}
+
+.form-group {
+    position: relative;
+    height: 56px;
+    margin: 15px 0;
+}
+
+.input-field {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    border: none;
+    color: black;
+    outline: 0;
+    border-bottom: 2px solid silver;
+
+}
+
+.input-label {
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    pointer-events: none;
+    color: #999999;
+    transition: all 0.3s ease;
+}
+
+.form-group .input-field:focus~.input-label,
+.form-group .input-field:valid~.input-label {
+    transform: translateY(-26px);
+    font-size: 15px;
+}
+
+.form-name {
+    position: absolute;
+    left: 13px;
+}
+
+/* about section css */
+
+.about-title {
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/* highlights section css */
 
 .section-subtitle {
     font-size: 30px;
@@ -203,6 +258,8 @@ body {
 .card-body {
     text-align: center;
 }
+
+/* testinomial section css */
 
 .testimonial-container {
     position: relative;
@@ -236,6 +293,7 @@ body {
     color: gray;
 }
 
+/* project section css */
 .project-list {
     list-style: none;
     padding: 0;
@@ -252,7 +310,7 @@ body {
     border: none;
 }
 
-.article-body {
+.project-subtitle {
     font-size: 12px;
 }
 
@@ -260,90 +318,48 @@ body {
     font-size: 13px;
 }
 
-.slides input {
+/*css for manual slide navigation*/
+
+
+/* .slides input {
     display: none;
 }
-
-/*css for manual slide navigation*/
 
 .navigation-manual {
     position: absolute;
     width: 800px;
-    margin-top: -40px;
+    margin-top: 20px;
     display: flex;
-    justify-content: center;
 }
 
 .manual-btn {
-    border: 2px solid #40D3DC;
-    padding: 5px;
+    background: black;
+    width: 9px;
+    height: 9px;
     border-radius: 10px;
     cursor: pointer;
-    transition: 1s;
+
 }
 
 .manual-btn:not(:last-child) {
-    margin-right: 40px;
-}
+    margin-right: 20px;
+} */
 
 .manual-btn:hover {
-    background: #40D3DC;
-}
+    background: #ff3366;
+    /* clip-path: circle(150% at 0 50%); */
+    /* circle outside */
+    /* border: 2px solid #ff0055;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; */
 
-#radiol:checked~.first {
-    margin-left: 0;
-}
+    /* position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; */
 
-#radio2:checked~.first {
-    margin-left: -20%;
-}
-
-#radio3:checked~.first {
-    margin-left: -40%;
-}
-
-#radiol:checked~.first {
-    margin-left: -60%;
-}
-
-@media screen and (max-width: 992px) {
-    .hero-section {
-        flex-direction: row;
-        text-align: center;
-    }
-
-    .text-danger {
-        margin-top: 99px;
-        font-size: 15px;
-    }
-
-    .hero-title {
-        font-size: 50px;
-        font-weight: 700;
-        margin-bottom: 30px;
-    }
-
-    .hero-image img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
-
-    .hero-body {
-        max-width: 500px;
-        font-size: 0.9rem;
-    }
-
-    .contact-button {
-        background-color: #FF0000;
-        color: #FFF;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 4px;
-        text-transform: uppercase;
-        margin-top: 26px;
-        font-size: 12px;
-    }
 }
 
 @media screen and (max-width: 768px) {

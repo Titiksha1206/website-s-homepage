@@ -17,3 +17,51 @@ $(document).ready(function () {
     $(this).addClass("active");
   });
 });
+
+// Reference To Buttons
+var btnLeft = document.getElementById("radio1");
+var btnRight = document.getElementById("radio2");
+var btnRights = document.getElementById("radio3");
+
+// Reference To Slider
+var slider = document.querySelector(".container .slides");
+
+btnRight.addEventListener("click", nextSlide);
+function nextSlide() {
+  slider.appendChild(slider.firstElementChild);
+}
+
+btnRights.addEventListener("click", nextSlide);
+function nextSlide() {
+  slider.appendChild(slider.firstElementChild);
+}
+
+btnLeft.addEventListener("click", prevSlide);
+function prevSlide() {
+  slider.prepend(slider.lastElementChild);
+}
+
+// Auto Sliding
+function autoSlide() {
+  deleteInterval = setInterval(timer, 1000);
+  function timer() {
+    nextSlide();
+  }
+}
+autoSlide();
+
+// Stop Auto Sliding When Mouse is Over
+slider.addEventListener("mouseover", deleteAutoSliding);
+btnRight.addEventListener("mouseover", deleteAutoSliding);
+btnRights.addEventListener("mouseover", deleteAutoSliding);
+btnLeft.addEventListener("mouseover", deleteAutoSliding);
+
+function deleteAutoSliding() {
+  clearInterval(deleteInterval);
+}
+
+// Resume Auto Sliding When Mouse is Out
+slider.addEventListener("mouseout", autoSlide);
+btnRight.addEventListener("mouseout", autoSlide);
+btnRights.addEventListener("mouseout", autoSlide);
+btnLeft.addEventListener("mouseout", autoSlide);
